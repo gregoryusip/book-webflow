@@ -1,0 +1,22 @@
+.button {
+  @apply w-fit transition-all duration-500 cursor-pointer;
+
+  p {
+    @apply font-bold;
+    font-family: "Cardo", serif !important;
+  }
+
+  &-bg-yellow {
+    @apply px-8 py-3 border-[1px] border-primary-two bg-primary-two text-primary-one hover:bg-primary-one hover:text-primary-two;
+  }
+  &-border-yellow {
+    @apply px-8 py-3 border-[1px] border-primary-two bg-transparent  hover:bg-primary-two hover:text-primary-one;
+  }
+
+  &-no-bg {
+    @apply w-fit flex items-center;
+    &__text {
+      @apply text-white border-b-[1px] border-b-white transition-all duration-500 hover:opacity-70;
+    }
+  }
+}

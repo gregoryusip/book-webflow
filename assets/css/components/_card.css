@@ -1,0 +1,126 @@
+.card {
+  @apply w-full flex flex-col;
+
+  &-bi {
+    @apply w-full flex flex-row flex-wrap items-center mb-10;
+
+    &--left {
+      @apply w-full lg:w-1/2 mb-4;
+    }
+    &--right {
+      @apply w-full lg:w-1/2 lg:pl-5;
+    }
+    &--img {
+      @apply w-full object-cover;
+    }
+    &--title {
+      @apply font-bold text-primary-one mb-3;
+    }
+    &--desc {
+      @apply font-normal text-base text-gray-text mb-7;
+    }
+    &--points {
+      @apply w-full flex mb-8;
+
+      &__container {
+        @apply w-1/2;
+      }
+    }
+  }
+
+  &-trusted {
+    @apply w-full flex flex-col;
+
+    &--img {
+      @apply h-20 mx-auto transition-all duration-500 group-hover:scale-110;
+    }
+    &--title {
+      @apply font-bold text-xl text-center text-primary-one pt-6 pb-2;
+    }
+    &--desc {
+      @apply font-normal text-base text-center text-gray-text;
+    }
+  }
+
+  &-learn {
+    @apply w-full flex flex-col px-8 py-10 bg-primary-three;
+
+    &--number {
+      @apply w-12 h-12 font-bold text-primary-one flex justify-center items-center rounded-full bg-primary-two mb-10;
+    }
+    &--title {
+      @apply font-bold text-primary-one;
+    }
+  }
+
+  &-chapter {
+    @apply w-full flex flex-col px-8 py-10 cursor-pointer bg-white;
+
+    &--title {
+      @apply w-fit font-bold text-primary-one mb-3 flex-grow transition-all duration-500 border-b-[2px] border-transparent group-hover:border-primary-one;
+    }
+    &--desc {
+      @apply font-normal text-base text-gray-text mb-6;
+    }
+    &--points {
+      @apply flex flex-wrap -mx-4 gap-y-2;
+
+      &__item {
+        @apply w-fit px-4;
+      }
+    }
+  }
+
+  &-article {
+    @apply w-full flex flex-col bg-white;
+
+    &--img {
+      @apply w-full h-[300px] overflow-hidden;
+
+      img {
+        @apply w-full h-full object-cover transition-all duration-500 group-hover:scale-110;
+      }
+    }
+    &--title {
+      @apply font-bold text-primary-one px-8 pt-6 mb-3 flex-grow;
+    }
+    &--desc {
+      @apply font-normal text-base px-8 text-gray-text mb-6;
+    }
+    &--footer {
+      @apply w-full flex justify-between items-center px-8 pb-6;
+
+      &__readmore {
+        @apply font-bold text-primary-one underline underline-offset-4 transition-all duration-500 hover:opacity-80;
+      }
+      &__author {
+        @apply font-normal text-sm text-primary-one;
+      }
+    }
+  }
+
+  &-review {
+    @apply w-full flex flex-col px-6 py-8 bg-primary-one;
+
+    &--biodata {
+      @apply w-full flex flex-wrap items-center mb-5;
+
+      &__img {
+        @apply w-20 h-20 rounded-full object-cover;
+      }
+      &__name {
+        width: calc(100% - 82px);
+        @apply pl-4 font-bold  text-white;
+      }
+      &__score {
+        @apply flex flex-wrap items-center gap-x-1;
+      }
+    }
+    &--quote {
+      @apply font-bold text-lg text-white mb-4;
+    }
+    &--desc {
+      @apply font-normal text-base text-light-text flex-grow;
+    }
+  }
+}

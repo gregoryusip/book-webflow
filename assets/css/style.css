@@ -1,0 +1,19 @@
+/* GENERAL */
+@import "./components/_general.css";
+
+/* COMPONENTS */
+@import "./components/_nav.css";
+@import "./components/_footer.css";
+@import "./components/_partials.css";
+@import "./components/_text.css";
+@import "./components/_button.css";
+@import "./components/_card.css";
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
